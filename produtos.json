@@ -1,0 +1,192 @@
+[
+  {
+    "id": "prod-1",
+    "title": "Sousplat Verde Celadon Prime",
+    "category": "sousplat",
+    "subCategory": "Mesa Posta & Recepção",
+    "price": 0,
+    "priceLabel": "Atelier",
+    "priceValue": "Sob Encomenda",
+    "image": "assets/images/sousplat-verde-celadon.jpg",
+    "imageAlt": "Sousplat Verde Celadon com talheres dourados",
+    "badge": "Edição Nobre",
+    "badgeType": "gold",
+    "desc": "Ponto circular uniforme com acabamento externo rendado em arcos delicados e plaqueta dourada personalizada.",
+    "specs": [
+      "Bico Rendado",
+      "Plaqueta Exclusiva"
+    ],
+    "keywords": "verde celadon prime sousplat mesa posta recepcao bordado rendado"
+  },
+  {
+    "id": "prod-2",
+    "title": "Trio Sousplat Terracota & Linho",
+    "category": "sousplat",
+    "subCategory": "Tons Naturais & Acolhedores",
+    "price": 0,
+    "priceLabel": "Atelier",
+    "priceValue": "Sob Encomenda",
+    "image": "assets/images/sousplat-trio-terracota.jpg",
+    "imageAlt": "Trio de sousplats terracota, areia e cru",
+    "badge": "Paleta Terrosa",
+    "badgeType": "standard",
+    "desc": "Composição em degradê quente nos tons terracota, areia e off-white com plaqueta metálica retangular exclusiva.",
+    "specs": [
+      "Trio Harmonizado",
+      "100% Algodão"
+    ],
+    "keywords": "trio sousplat terracota linho areia cru paleta terrosa tons naturais acolhedores"
+  },
+  {
+    "id": "prod-3",
+    "title": "Jogo Sousplat Azul Notte",
+    "category": "sousplat",
+    "subCategory": "Mesa Noturna & Elegância",
+    "price": 0,
+    "priceLabel": "Atelier",
+    "priceValue": "Sob Encomenda",
+    "image": "assets/images/sousplat-azul-marinho.jpg",
+    "imageAlt": "Sousplat azul marinho em ponto pipoca",
+    "badge": "Alta Densidade",
+    "badgeType": "standard",
+    "desc": "Trama tridimensional no ponto pipoca concêntrico em azul marinho profundo para composições nobres.",
+    "specs": [
+      "Ponto Pipoca em Relevo",
+      "Alta Estrutura"
+    ],
+    "keywords": "jogo sousplat azul notte marinho ponto pipoca relevo alta densidade nobre"
+  },
+  {
+    "id": "prod-4",
+    "title": "Coleção Sousplat & Trilho Marsala",
+    "category": "colecao",
+    "subCategory": "Mesa Posta Romântica",
+    "price": 0,
+    "priceLabel": "Atelier",
+    "priceValue": "Sob Encomenda",
+    "image": "assets/images/colecao-rosa-marsala.jpg",
+    "imageAlt": "Coleção sousplat e caminho de mesa rosa marsala",
+    "badge": "Coleção Especial",
+    "badgeType": "standard",
+    "desc": "Conjunto sofisticado unindo sousplats rendados e trilho em degradê nos tons rosa seco, bordô e cru.",
+    "specs": [
+      "Sousplats + Trilho",
+      "Degradê Nobre"
+    ],
+    "keywords": "colecao sousplat caminho trilho rosa marsala bordo romântica degrade jogo"
+  },
+  {
+    "id": "prod-5",
+    "title": "Trilho Espiral Azul Celeste",
+    "category": "trilho",
+    "subCategory": "Centros de Mesa & Décor",
+    "price": 0,
+    "priceLabel": "Atelier",
+    "priceValue": "Sob Encomenda",
+    "image": "assets/images/trilho-azul-celeste.jpg",
+    "imageAlt": "Trilho de mesa em crochê azul celeste espiralado com flores",
+    "badge": "Flores com Pérolas",
+    "badgeType": "standard",
+    "desc": "Ondas espiraladas em azul royal, celeste e cru com aplicações florais em relevo com pérolas e plaqueta dourada.",
+    "specs": [
+      "Flores em Relevo",
+      "Pérolas Aplicadas"
+    ],
+    "keywords": "trilho mesa espiral azul celeste flores perolas relevo centro decor"
+  },
+  {
+    "id": "prod-6",
+    "title": "Trilho Barroco Tons Terrosos",
+    "category": "trilho",
+    "subCategory": "Alta Decoração Clássica",
+    "price": 0,
+    "priceLabel": "Atelier",
+    "priceValue": "Sob Encomenda",
+    "image": "assets/images/trilho-tons-terrosos.jpg",
+    "imageAlt": "Trilho de mesa barroco em tons marrom e cru com flores",
+    "badge": "Clássico Barroco",
+    "badgeType": "standard",
+    "desc": "Trama concêntrica barroca nos tons café, caramelo e linho com flores tridimensionais centrais peroladas.",
+    "specs": [
+      "Design Barroco",
+      "Tons Terrosos Nobres"
+    ],
+    "keywords": "trilho barroco tons terrosos cafe caramelo linho flores perolas classico"
+  },
+  {
+    "id": "prod-7",
+    "title": "Trilho de Mesa Grafite Imperial",
+    "category": "trilho",
+    "subCategory": "Mesa Contemporânea",
+    "price": 0,
+    "priceLabel": "Atelier",
+    "priceValue": "Sob Encomenda",
+    "image": "assets/images/trilho-grafite-chumbo.jpg",
+    "imageAlt": "Trilho de mesa em crochê grafite e cru com flores",
+    "badge": "Moderno & Nobre",
+    "badgeType": "gold",
+    "desc": "Composição em cinza chumbo e cru com flores pontilhadas com pérola e plaqueta metálica gravada de autenticidade.",
+    "specs": [
+      "Contemporâneo",
+      "Plaqueta Exclusiva"
+    ],
+    "keywords": "trilho mesa grafite imperial chumbo cru contemporanea moderna flores"
+  },
+  {
+    "id": "prod-8",
+    "title": "Trilho de Mesa Vermelho Rubi",
+    "category": "trilho",
+    "subCategory": "Ocasiões & Celebrações",
+    "price": 0,
+    "priceLabel": "Atelier",
+    "priceValue": "Sob Encomenda",
+    "image": "assets/images/trilho-vermelho-rubi.jpg",
+    "imageAlt": "Trilho de mesa em crochê vermelho e cru com flores",
+    "badge": "Edição Especial",
+    "badgeType": "standard",
+    "desc": "Tonalidade vermelha rica e vibrante combinada com o linho cru e flores tridimensionais com miolo em pérola.",
+    "specs": [
+      "Ocasiões Especiais",
+      "Flores com Pérolas"
+    ],
+    "keywords": "trilho mesa vermelho rubi marsala cru ocasioes festas natal flores 3d"
+  },
+  {
+    "id": "prod-9",
+    "title": "Sousplat Pêssego & Salmão Prime",
+    "category": "sousplat",
+    "subCategory": "Tons Pastéis & Acolhedores",
+    "price": 0,
+    "priceLabel": "Atelier",
+    "priceValue": "Sob Encomenda",
+    "image": "assets/images/sousplat-pessego-salmao.jpg",
+    "imageAlt": "Sousplat em crochê pêssego e salmão com plaqueta dourada",
+    "badge": "Edição Nobre",
+    "badgeType": "gold",
+    "desc": "Trama no ponto pipoca em salmão suave com acabamento rendado e plaqueta metálica gravada de autenticidade.",
+    "specs": [
+      "Ponto Pipoca",
+      "Plaqueta Exclusiva"
+    ],
+    "keywords": "sousplat pessego salmao prime ponto pipoca rendado pasteis acolhedores"
+  },
+  {
+    "id": "prod-10",
+    "title": "Trilho de Mesa Floral Rosa Antigo",
+    "category": "trilho",
+    "subCategory": "Centros de Mesa & Décor",
+    "price": 0,
+    "priceLabel": "Atelier",
+    "priceValue": "Sob Encomenda",
+    "image": "assets/images/trilho-rosa-antigo.jpg",
+    "imageAlt": "Trilho de mesa em crochê rosa antigo com flores tridimensionais e pérolas",
+    "badge": "Flores 3D & Pérolas",
+    "badgeType": "standard",
+    "desc": "Trama rendada nobre em rosa antigo, bordô e off-white com três flores centrais em relevo pontilhadas por pérolas.",
+    "specs": [
+      "Flores 3D com Pérola",
+      "Bico Duplo Rendado"
+    ],
+    "keywords": "trilho mesa floral rosa antigo flores 3d perolas bico rendado centro decor"
+  }
+]

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#8C533E">
+  <title>Sem Conexão | Rangel Luxo Crochê</title>
+  
+  <style>
+    :root {
+      --color-primary: #8C533E;
+      --color-primary-dark: #6D3D2C;
+      --color-gold: #C9A265;
+      --color-gold-light: #DFBA7E;
+      --color-bg: #FAF8F5;
+      --color-surface: #FFFFFF;
+      --color-text-main: #2A2421;
+      --color-text-muted: #736862;
+      --radius-md: 12px;
+      --radius-lg: 20px;
+      --shadow-card: 0 10px 30px rgba(140, 83, 62, 0.08);
+      --font-serif: 'Cormorant Garamond', Georgia, serif;
+      --font-sans: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      background-color: var(--color-bg);
+      color: var(--color-text-main);
+      font-family: var(--font-sans);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    .offline-card {
+      background: var(--color-surface);
+      border: 1px solid rgba(201, 162, 101, 0.25);
+      border-radius: var(--radius-lg);
+      padding: 2.5rem 1.75rem;
+      max-width: 440px;
+      width: 100%;
+      box-shadow: var(--shadow-card);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .offline-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--color-gold), var(--color-primary), var(--color-gold));
+    }
+
+    .emblem-wrapper {
+      width: 90px;
+      height: 90px;
+      margin: 0 auto 1.5rem auto;
+      border-radius: 50%;
+      padding: 3px;
+      background: linear-gradient(135deg, var(--color-gold), var(--color-primary));
+      box-shadow: 0 6px 20px rgba(140, 83, 62, 0.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .emblem-img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .badge-offline {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.35rem 0.85rem;
+      border-radius: 50px;
+      background-color: #FFF3EB;
+      color: var(--color-primary);
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+      border: 1px solid rgba(140, 83, 62, 0.2);
+    }
+
+    .pulse-dot {
+      width: 8px;
+      height: 8px;
+      background-color: #E65100;
+      border-radius: 50%;
+      display: inline-block;
+      animation: pulse 1.8s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(230, 81, 0, 0.7); }
+      70% { transform: scale(1); box-shadow: 0 0 0 8px rgba(230, 81, 0, 0); }
+      100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(230, 81, 0, 0); }
+    }
+
+    h1 {
+      font-family: var(--font-serif);
+      font-size: 1.85rem;
+      font-weight: 600;
+      color: var(--color-primary-dark);
+      margin-bottom: 0.75rem;
+      line-height: 1.25;
+    }
+
+    p {
+      font-size: 0.95rem;
+      color: var(--color-text-muted);
+      line-height: 1.6;
+      margin-bottom: 1.75rem;
+    }
+
+    .actions-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      min-height: 48px;
+      padding: 0.85rem 1.5rem;
+      border-radius: var(--radius-md);
+      font-size: 0.95rem;
+      font-weight: 600;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      width: 100%;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+      color: #FFFFFF;
+      box-shadow: 0 4px 14px rgba(140, 83, 62, 0.25);
+    }
+
+    .btn-primary:active {
+      transform: scale(0.98);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: var(--color-primary);
+      border: 1.5px solid var(--color-gold);
+    }
+
+    .btn-secondary:active {
+      background: rgba(201, 162, 101, 0.1);
+    }
+
+    .contact-note {
+      margin-top: 1.5rem;
+      font-size: 0.82rem;
+      color: var(--color-text-muted);
+    }
+
+    .contact-note a {
+      color: var(--color-primary);
+      font-weight: 600;
+      text-decoration: underline;
+    }
+
+    /* Animação de reconexão */
+    .spinner {
+      display: none;
+      width: 18px;
+      height: 18px;
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      border-top-color: #ffffff;
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+
+  <main class="offline-card" role="main">
+    <div class="emblem-wrapper">
+      <img src="assets/icons/icon-192.png" alt="Rangel Luxo Crochê" class="emblem-img" width="84" height="84">
+    </div>
+
+    <div class="badge-offline">
+      <span class="pulse-dot" aria-hidden="true"></span>
+      Modo Offline
+    </div>
+
+    <h1>Conexão Temporariamente Indisponível</h1>
+    
+    <p>
+      O Atelier Rangel Luxo foi salvo em seu dispositivo. Assim que seu sinal retornar, você poderá navegar por todas as peças, coleções e finalizar suas encomendas.
+    </p>
+
+    <div class="actions-stack">
+      <button type="button" class="btn btn-primary" id="retryButton">
+        <span class="spinner" id="retrySpinner" aria-hidden="true"></span>
+        <span id="retryText">Tentar Novamente</span>
+      </button>
+
+      <a href="tel:+5527996124303" class="btn btn-secondary">
+        Ligar para o Atelier: (27) 99612-4303
+      </a>
+    </div>
+
+    <div class="contact-note">
+      Dúvidas sobre encomendas em andamento? <br>
+      WhatsApp disponível mesmo offline: <a href="https://wa.me/5527996124303" target="_blank" rel="noopener noreferrer">(27) 99612-4303</a>
+    </div>
+  </main>
+
+  <script>
+    const retryBtn = document.getElementById('retryButton');
+    const retrySpinner = document.getElementById('retrySpinner');
+    const retryText = document.getElementById('retryText');
+
+    function checkConnection() {
+      retrySpinner.style.display = 'inline-block';
+      retryText.textContent = 'Verificando...';
+      retryBtn.disabled = true;
+
+      // Tentativa de ping com timeout de 3 segundos
+      fetch('/favicon.ico', { method: 'HEAD', cache: 'no-store' })
+        .then(() => {
+          window.location.href = '/';
+        })
+        .catch(() => {
+          setTimeout(() => {
+            retrySpinner.style.display = 'none';
+            retryText.textContent = 'Ainda sem conexão. Tentar de novo';
+            retryBtn.disabled = false;
+          }, 800);
+        });
+    }
+
+    retryBtn.addEventListener('click', checkConnection);
+
+    // Auto-recarga instantânea se a rede voltar
+    window.addEventListener('online', () => {
+      window.location.href = '/';
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  
+  <!-- Segurança: Content Security Policy Rigorosa para PWA e Supabase -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://*.supabase.co wss://*.supabase.co; worker-src 'self'; manifest-src 'self'; frame-ancestors 'none'; form-action 'self'; base-uri 'self'; object-src 'none';">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <!-- Progressive Web App (PWA) & Manifest -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#8C533E">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="Rangel Crochê">
+
+  <!-- Configurações Apple iOS / Web App Standalone -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Rangel Crochê">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+
+  <!-- Configurações Windows Tile -->
+  <meta name="msapplication-TileColor" content="#8C533E">
+  <meta name="msapplication-TileImage" content="assets/icons/icon-144.png">
+
+  <!-- SEO Primário -->
+  <title>Rangel Luxo | Peças Artesanais de Luxo Feitas à Mão</title>
+  <meta name="description" content="Atelier Rangel Luxo. Mesa posta nobre, sousplats exclusivos com plaqueta personalizada, trilhos de mesa sofisticados e peças sob medida feitas à mão.">
+  <meta name="keywords" content="Rangel Luxo, sousplat de crochê luxo, trilho de mesa artesanal, mesa posta luxo, crochê sob medida, sousplat verde celadon, trilho de mesa barroco">
+  <meta name="author" content="Rangel Luxo">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://rangeluxocroche.com.br/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Rangel Luxo">
+  <meta property="og:title" content="Rangel Luxo | Obras de Arte em Crochê Artesanal">
+  <meta property="og:description" content="Mesa posta de alto padrão e peças exclusivas feitas à mão com fios nobres e plaqueta dourada personalizada.">
+  <meta property="og:image" content="assets/images/rangel-emblem.jpg">
+  <meta property="og:url" content="https://rangeluxocroche.com.br/">
+
+  <!-- Favicons Oficiais PWA -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='46' fill='%238C533E'/><circle cx='50' cy='50' r='42' fill='none' stroke='%23C9A265' stroke-width='2'/><path d='M35 70V30H52C60 30 65 34 65 42C65 49 60 53 52 53H35M48 53L65 70' fill='none' stroke='%23FAF8F5' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/></svg>">
+
+  <!-- Tipografia Exclusiva: POPPINS + CORMORANT GARAMOND (Google Fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+
+  <!-- Folha de Estilos Principal Mobile-First -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Dados Estruturados Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeGoodsStore",
+    "name": "Rangel Luxo",
+    "image": "assets/images/rangel-emblem.jpg",
+    "telephone": "+55-27-99612-4303",
+    "description": "Atelier especializado em crochê artesanal de alto luxo, mesa posta refinada, sousplats exclusivos com plaqueta personalizada e trilhos florais sob medida.",
+    "priceRange": "$$$",
+    "address": {
+      "@type": "PostalAddress",
+      "addressRegion": "ES",
+      "addressCountry": "BR"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Skip link de acessibilidade -->
+  <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+
+  <!-- ========================================================================
+       HEADER FIXO / STICKY & LOGO "RANGEL LUXO"
+       ======================================================================== -->
+  <header class="site-header" id="header">
+    <div class="container header-container">
+      
+      <!-- Logotipo Encurtada para "Rangel Luxo" -->
+      <a href="#inicio" class="brand-link" aria-label="Rangel Luxo - Página Inicial">
+        <img 
+          src="assets/images/rangel-emblem.jpg" 
+          alt="Emblema Rangel Luxo" 
+          class="brand-emblem-mini" 
+          width="40" 
+          height="40"
+        >
+        <span class="brand-name">Rangel Luxo</span>
+      </a>
+
+      <!-- Menu de Navegação Desktop (Visível em Telas Médias e Grandes) -->
+      <nav class="desktop-nav" aria-label="Navegação Principal Desktop">
+        <ul class="nav-list-desktop">
+          <li><a href="#inicio" class="nav-link active">Início</a></li>
+          <li><a href="#categorias" class="nav-link">Categorias</a></li>
+          <li><a href="#colecao" class="nav-link">Coleção Nobre</a></li>
+          <li><a href="#diferenciais" class="nav-link">Diferenciais</a></li>
+          <li><a href="#artesanal" class="nav-link">O Atelier</a></li>
+          <li><a href="#processo" class="nav-link">Encomendas</a></li>
+          <li><a href="#encomenda" class="nav-link">Contato</a></li>
+        </ul>
+      </nav>
+
+      <!-- Ações do Header: Busca Rápida, Painel Admin, Carrinho & Login -->
+      <div class="header-actions">
+        <!-- Botão Fixo e Permanente de Instalação PWA (Discreto e sempre acessível) -->
+        <button type="button" class="pwa-header-install-btn" id="pwaHeaderInstallBtn" aria-label="Instalar Aplicativo Rangel Luxo" title="Instalar Aplicativo no Dispositivo">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+          <span class="pwa-header-install-text">Instalar App</span>
+        </button>
+
+        <!-- Botão Painel Admin (visível quando logado como admin) -->
+        <button type="button" id="adminHeaderBtn" class="btn btn-gold btn-sm" style="display: none;" title="Abrir Painel de Gestão">
+          ⚙ Painel
+        </button>
+
+        <!-- Botão Carrinho de Compras Desktop com Badge (No mobile fica exclusivamente na barra inferior) -->
+        <button type="button" class="action-icon-btn header-cart-btn" id="cartTriggerBtn" aria-label="Abrir carrinho de compras" title="Meu Carrinho">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          <span class="cart-badge" id="cartBadge" style="display: none;">0</span>
+        </button>
+
+        <!-- Botão Usuário / Login / Registro -->
+        <button type="button" class="action-icon-btn header-auth-btn" id="authTriggerBtn" aria-label="Entrar na conta" title="Entrar ou Cadastrar-se">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </button>
+
+        <!-- Botão Hambúrguer Mobile (No mobile fica exclusivamente na barra inferior) -->
+        <button type="button" class="nav-toggle" id="mobileNavToggleBtn" aria-expanded="false" aria-controls="mobileNavDrawer" aria-label="Abrir menu de navegação">
+          <span class="nav-toggle-icon" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       DRAWER MOBILE DEDICADO & MOBILE-FIRST (ISOLADO DO HEADER - ZERO BLUR)
+       Inspirado no Offcanvas Mobile do Imaterial (Totalmente Nítido e Fluido)
+       ======================================================================== -->
+  <div class="mobile-drawer-backdrop" id="mobileNavBackdrop" aria-hidden="true"></div>
+
+  <nav class="mobile-drawer" id="mobileNavDrawer" aria-label="Navegação Mobile Principal" aria-hidden="true">
+    <!-- Cabeçalho do Menu Mobile -->
+    <div class="mobile-drawer-header">
+      <div class="mobile-drawer-brand">
+        <img 
+          src="assets/images/rangel-emblem.jpg" 
+          alt="Rangel Luxo" 
+          class="brand-emblem-mini" 
+          width="36" 
+          height="36"
+        >
+        <div>
+          <span class="brand-name" style="font-size: 1.15rem; display: block;">Rangel Luxo</span>
+          <span style="font-size: 0.72rem; color: var(--color-gold-dark); font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em;">Atelier de Alta Costura</span>
+        </div>
+      </div>
+      <button type="button" class="mobile-drawer-close" id="mobileDrawerCloseBtn" aria-label="Fechar menu">✕</button>
+    </div>
+
+    <!-- Campo de Busca Rápida no Catálogo (como no Imaterial) -->
+    <div class="mobile-drawer-search">
+      <div class="search-input-wrapper">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="search" id="mobileSearchInput" placeholder="Buscar peça, cor ou modelo..." aria-label="Buscar produtos no catálogo">
+      </div>
+    </div>
+
+    <!-- Links de Navegação Mobile -->
+    <div class="mobile-drawer-content">
+      <div class="mobile-nav-group-title">Navegação</div>
+      <ul class="mobile-nav-list">
+        <li>
+          <a href="#inicio" class="mobile-nav-link active">
+            <span>Início</span>
+            <span class="nav-arrow">→</span>
+          </a>
+        </li>
+        <li>
+          <a href="#categorias" class="mobile-nav-link">
+            <span>Categorias em Destaque</span>
+            <span class="nav-arrow">→</span>
+          </a>
+        </li>
+        <li>
+          <a href="#colecao" class="mobile-nav-link">
+            <span>Coleção Completa (10 Peças)</span>
+            <span class="nav-badge-pill">Ver Catálogo</span>
+          </a>
+        </li>
+        <li>
+          <a href="#diferenciais" class="mobile-nav-link">
+            <span>Diferenciais & Acabamento</span>
+            <span class="nav-arrow">→</span>
+          </a>
+        </li>
+        <li>
+          <a href="#artesanal" class="mobile-nav-link">
+            <span>Filosofia & Feito à Mão</span>
+            <span class="nav-arrow">→</span>
+          </a>
+        </li>
+        <li>
+          <a href="#processo" class="mobile-nav-link">
+            <span>Como Encomendar</span>
+            <span class="nav-arrow">→</span>
+          </a>
+        </li>
+        <li>
+          <a href="#sobre" class="mobile-nav-link">
+            <span>Sobre o Atelier Rangel</span>
+            <span class="nav-arrow">→</span>
+          </a>
+        </li>
+        <li>
+          <a href="#encomenda" class="mobile-nav-link">
+            <span>Solicitar Orçamento / Contato</span>
+            <span class="nav-arrow">→</span>
+          </a>
+        </li>
+      </ul>
+
+      <!-- Atalhos de Categorias Rápidas -->
+      <div class="mobile-nav-group-title" style="margin-top: 1.25rem;">Categorias Rápidas</div>
+      <div class="mobile-quick-chips">
+        <button type="button" class="quick-chip-btn" data-filter="sousplat">Sousplats Nobres</button>
+        <button type="button" class="quick-chip-btn" data-filter="trilho">Trilhos Florais 3D</button>
+        <button type="button" class="quick-chip-btn" data-filter="colecao">Coleções</button>
+        <button type="button" class="quick-chip-btn" data-filter="all">Ver Tudo</button>
+      </div>
+    </div>
+
+    <!-- Ações Inferiores do Drawer -->
+    <div class="mobile-drawer-footer">
+      <!-- Botão Fixo e Permanente de Instalação PWA no Drawer -->
+      <button type="button" class="btn btn-gold" id="pwaInstallDrawerBtn" style="width: 100%; margin-bottom: 0.75rem; justify-content: center; gap: 0.5rem;">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+        <span>Instalar Aplicativo no Celular</span>
+      </button>
+
+      <div class="drawer-action-dual">
+        <a href="#encomenda" class="btn btn-primary mobile-close-trigger" style="flex: 1;">
+          Fazer Encomenda
+        </a>
+        <button type="button" class="btn btn-secondary mobile-cart-trigger" style="flex: 1;">
+          Ver Carrinho
+        </button>
+      </div>
+      <div class="mobile-drawer-meta">
+        <span>✓ Plaqueta Exclusiva • Fios Nobres</span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========================================================================
+       CONTEÚDO PRINCIPAL
+       ======================================================================== -->
+  <main id="main-content">
+
+    <!-- 1. HERO SECTION COM ESTÉTICA EDITORIAL E ARTESANAL -->
+    <section class="hero-section" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-pill-badge">
+            <span class="pill-dot"></span>
+            <span>Atelier de Alta Decoração & Mesa Posta</span>
+          </div>
+
+          <h1 class="hero-title">
+            O requinte do <span class="font-serif">crochê de luxo</span> para transformar a sua <span class="hero-highlight font-serif">mesa posta</span> e momentos únicos.
+          </h1>
+
+          <p class="hero-description">
+            Jogos americanos nobres, sousplats rendados e trilhos florais 3D tecidos meticulosamente ponto a ponto em fios selecionados, finalizados com a exclusividade da nossa plaqueta metálica dourada gravada.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#colecao" class="btn btn-primary btn-hero">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+              Explorar Coleção Nobre
+            </a>
+            <a href="#encomenda" class="btn btn-secondary btn-hero">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+              Encomendar Sob Medida
+            </a>
+          </div>
+
+          <div class="hero-trust-bar">
+            <div class="hero-trust-item">
+              <div class="trust-item-icon">🌟</div>
+              <div>
+                <strong>Plaqueta Personalizada Exclusiva</strong>
+                <span>Acabamento nobre em cada peça</span>
+              </div>
+            </div>
+            <div class="hero-trust-divider"></div>
+            <div class="hero-trust-item">
+              <div class="trust-item-icon">🌿</div>
+              <div>
+                <strong>Fios Nobres 100%</strong>
+                <span>Toque aveludado e caimento firme</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-visual-card">
+            <div class="hero-emblem-frame">
+              <img 
+                src="assets/images/rangel-emblem.jpg" 
+                alt="Rangel Luxo - Atelier Oficial de Mesa Posta" 
+                class="hero-emblem-image"
+                width="440" 
+                height="440"
+                loading="eager"
+                fetchpriority="high"
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. BOX BANNERS & CATEGORIAS CURADAS (INSPIRAÇÃO IMATERIAL) -->
+    <section class="categories-section" id="categorias">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-tag">Coleções & Destaques</span>
+          <h2 class="section-title">Explore por Categorias Nobres</h2>
+          <p class="section-subtitle">
+            Criações artesanais pensadas para vestir mesas de café, almoços de família e jantares memoráveis.
+          </p>
+        </div>
+
+        <div class="categories-grid">
+          <!-- Card Categoria 1: Sousplats Prime -->
+          <a href="#colecao" class="category-box-card" data-category="sousplat">
+            <div class="category-box-bg" style="background-image: url('assets/images/sousplat-verde-celadon.jpg');"></div>
+            <div class="category-box-overlay"></div>
+            <div class="category-box-content">
+              <span class="category-box-tag">Mesa Posta</span>
+              <h3 class="category-box-title font-serif">Sousplats Rendados Prime</h3>
+              <p class="category-box-desc">Trama concêntrica no ponto pipoca e bicos rendados em arcos.</p>
+              <span class="category-box-cta">Ver Sousplats →</span>
+            </div>
+          </a>
+
+          <!-- Card Categoria 2: Trilhos Florais 3D -->
+          <a href="#colecao" class="category-box-card" data-category="trilho">
+            <div class="category-box-bg" style="background-image: url('assets/images/trilho-azul-celeste.jpg');"></div>
+            <div class="category-box-overlay"></div>
+            <div class="category-box-content">
+              <span class="category-box-tag">Centros de Mesa</span>
+              <h3 class="category-box-title font-serif">Trilhos Florais em 3D</h3>
+              <p class="category-box-desc">Ondas espiraladas, flores esculpidas em relevo e pérolas aplicadas.</p>
+              <span class="category-box-cta">Ver Trilhos Florais →</span>
+            </div>
+          </a>
+
+          <!-- Card Categoria 3: Coleções Coordenadas -->
+          <a href="#colecao" class="category-box-card" data-category="colecao">
+            <div class="category-box-bg" style="background-image: url('assets/images/colecao-rosa-marsala.jpg');"></div>
+            <div class="category-box-overlay"></div>
+            <div class="category-box-content">
+              <span class="category-box-tag">Harmonia Completa</span>
+              <h3 class="category-box-title font-serif">Coleções & Jogos</h3>
+              <p class="category-box-desc">Sousplats e caminhos de mesa combinados em paletas sofisticadas.</p>
+              <span class="category-box-cta">Ver Coleções →</span>
+            </div>
+          </a>
+
+          <!-- Card Categoria 4: Peças Sob Medida -->
+          <a href="#encomenda" class="category-box-card category-box-custom">
+            <div class="category-box-bg" style="background-image: url('assets/images/trilho-tons-terrosos.jpg');"></div>
+            <div class="category-box-overlay"></div>
+            <div class="category-box-content">
+              <span class="category-box-tag">Exclusividade Total</span>
+              <h3 class="category-box-title font-serif">Peças Sob Medida</h3>
+              <p class="category-box-desc">Escolha a cor, medidas e modelo sob encomenda para a sua mesa.</p>
+              <span class="category-box-cta">Solicitar Projeto →</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. BENEFÍCIOS & DIFERENCIAIS -->
+    <section class="benefits-section" id="diferenciais">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-tag">O Luxo nos Detalhes</span>
+          <h2 class="section-title">A Essência do Nosso Ateliê</h2>
+          <p class="section-subtitle">
+            Entenda o que torna cada criação da Rangel Luxo uma obra de arte manual única e duradoura.
+          </p>
+        </div>
+
+        <div class="benefits-grid">
+          <article class="benefit-card">
+            <div class="benefit-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+            <h3 class="benefit-title">100% Feito à Mão</h3>
+            <p class="benefit-desc">
+              Cada laçada é tecida artesanalmente com rigor técnico, garantindo uniformidade, caimento perfeito e acabamento impecável.
+            </p>
+          </article>
+
+          <article class="benefit-card">
+            <div class="benefit-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <h3 class="benefit-title">Plaqueta Exclusiva</h3>
+            <p class="benefit-desc">
+              Nosso diferencial de ateliê: uma plaqueta metálica personalizada fixada com carinho na peça, atestando sua procedência nobre.
+            </p>
+          </article>
+
+          <article class="benefit-card">
+            <div class="benefit-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <h3 class="benefit-title">Fios Nobres Selecionados</h3>
+            <p class="benefit-desc">
+              Trabalhamos com fios de alto padrão, respiráveis, de toque macio e com cores ricas que não desbotam com a lavagem.
+            </p>
+          </article>
+
+          <article class="benefit-card">
+            <div class="benefit-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+            </div>
+            <h3 class="benefit-title">Envio Protegido</h3>
+            <p class="benefit-desc">
+              Cada pedido é embalado com todo o cuidado e enviado com rastreamento prioritário para qualquer região do Brasil.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. COLEÇÃO COMPLETA COM AS 10 PEÇAS REAIS AUTÊNTICAS -->
+    <section class="catalog-section" id="colecao">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-tag">Peças Exclusivas</span>
+          <h2 class="section-title">Coleção de Mesa Posta Nobre</h2>
+          <p class="section-subtitle">
+            Fotografias reais das peças confeccionadas pelo nosso atelier. Adicione ao carrinho ou encomende sob medida.
+          </p>
+        </div>
+
+        <!-- Barra de Filtros e Busca Interativa (Estilo Imaterial) -->
+        <div class="catalog-toolbar">
+          <div class="catalog-filter-tabs" role="tablist" aria-label="Filtro de categorias">
+            <button type="button" class="catalog-tab active" data-category="all" role="tab" aria-selected="true">
+              Todas as Peças <span class="tab-count">(10)</span>
+            </button>
+            <button type="button" class="catalog-tab" data-category="sousplat" role="tab" aria-selected="false">
+              Sousplats Prime <span class="tab-count">(4)</span>
+            </button>
+            <button type="button" class="catalog-tab" data-category="trilho" role="tab" aria-selected="false">
+              Trilhos Florais 3D <span class="tab-count">(5)</span>
+            </button>
+            <button type="button" class="catalog-tab" data-category="colecao" role="tab" aria-selected="false">
+              Coleções & Jogos <span class="tab-count">(1)</span>
+            </button>
+          </div>
+
+          <div class="catalog-search-wrapper">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <input type="search" id="catalogSearchInput" placeholder="Filtrar por nome, cor ou acabamento..." aria-label="Filtrar produtos no catálogo">
+          </div>
+        </div>
+
+        <div class="products-grid" id="catalogProductsGrid">
+          <!-- Grade Dinâmica: Renderizada a partir de produtos.json -->
+        </div>
+
+        <!-- Mensagem de Nenhum Produto Encontrado no Filtro -->
+        <div id="noProductsFound" class="no-products-msg" style="display: none;">
+          <p>Nenhuma peça encontrada com os termos buscados.</p>
+          <button type="button" class="btn btn-secondary btn-sm" id="resetFiltersBtn">Limpar Filtros</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- MANIFESTO ARTESANAL & HISTÓRIA (INSPIRAÇÃO IMATERIAL "NÃO BASTA SER ARTESANAL...") -->
+    <section class="artisan-story-section" id="artesanal">
+      <div class="container">
+        <div class="artisan-story-card">
+          <div class="story-content">
+            <span class="section-tag-gold">Filosofia do Ateliê</span>
+            <h2 class="story-title font-serif">
+              Não basta ser artesanal: é preciso ter alma, técnica e sofisticação.
+            </h2>
+            <p class="story-desc">
+              Em um mundo dominado pela produção em massa descartável, a <strong>Rangel Luxo</strong> preserva a nobreza do tempo e a precisão do trabalho manual. Cada sousplat e trilho floral leva dezenas de horas de dedicação minuciosa, laçada por laçada, fio por fio.
+            </p>
+            <p class="story-desc">
+              Nossa plaqueta metálica dourada gravada não é apenas um adorno: atesta a exclusividade de uma peça que pertencerá à sua família por gerações, transformando qualquer refeição em uma celebração inesquecível.
+            </p>
+
+            <div class="story-features-list">
+              <div class="story-feature-item">
+                <span class="feature-bullet">✦</span>
+                <div>
+                  <strong>Valorização da Arte Manual</strong>
+                  <span>Tempo de tecelagem respeitado com máxima atenção aos detalhes.</span>
+                </div>
+              </div>
+              <div class="story-feature-item">
+                <span class="feature-bullet">✦</span>
+                <div>
+                  <strong>Matérias-Primas Selecionadas</strong>
+                  <span>Fios de puro algodão que não deformam e preservam a vivacidade das cores.</span>
+                </div>
+              </div>
+              <div class="story-feature-item">
+                <span class="feature-bullet">✦</span>
+                <div>
+                  <strong>Atendimento Direto com a Artesã</strong>
+                  <span>Você participa da escolha de cores e dimensões para sua mesa.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="story-cta-box">
+              <a href="#encomenda" class="btn btn-primary">
+                Conversar sobre Encomenda Sob Medida
+              </a>
+              <a href="https://instagram.com/rangel_luxocroche" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                Ver Bastidores no Instagram
+              </a>
+            </div>
+          </div>
+
+          <div class="story-visual">
+            <div class="story-image-wrap">
+              <img src="assets/images/colecao-rosa-marsala.jpg" alt="Detalhe do crochê de luxo Rangel" class="story-image" loading="lazy" width="600" height="600">
+              <div class="story-badge-floating">
+                <strong>100% Manual</strong>
+                <span>Plaqueta Exclusiva</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. COMO FUNCIONA SUA ENCOMENDA -->
+    <section class="process-section" id="processo">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-tag">Passo a Passo</span>
+          <h2 class="section-title">Como Funciona Sua Encomenda</h2>
+          <p class="section-subtitle">
+            Processo transparente, personalizado e com atendimento direto pelo atelier.
+          </p>
+        </div>
+
+        <div class="process-grid">
+          <div class="process-step">
+            <div class="process-number">01</div>
+            <h3 class="process-title">Definição do Jogo</h3>
+            <p class="process-desc">
+              Você escolhe os modelos desejados (sousplats rendados ou trilhos florais), quantidade de lugares e medidas para sua mesa.
+            </p>
+          </div>
+
+          <div class="process-step">
+            <div class="process-number">02</div>
+            <h3 class="process-title">Produção Artesanal</h3>
+            <p class="process-desc">
+              A peça é tecida ponto a ponto com fios selecionados e recebe a plaqueta metálica personalizada gravada com a marca.
+            </p>
+          </div>
+
+          <div class="process-step">
+            <div class="process-number">03</div>
+            <h3 class="process-title">Embalagem e Entrega</h3>
+            <p class="process-desc">
+              Seu pedido é cuidadosamente preparado, protegido e despachado com código de rastreamento para qualquer região do Brasil.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. SOBRE A MARCA & O ATELIER -->
+    <section class="about-section" id="sobre">
+      <div class="container about-grid">
+        <div class="about-visual">
+          <img 
+            src="assets/images/rangel-emblem.jpg" 
+            alt="Atelier Rangel Luxo" 
+            class="about-emblem"
+            loading="lazy"
+            width="380" 
+            height="380"
+          >
+        </div>
+
+        <div class="about-content">
+          <span class="section-tag">História & Identidade</span>
+          <h2 class="section-title">Rangel Luxo: Paixão e Tradição</h2>
+          
+          <p class="about-p">
+            A <strong>Rangel Luxo</strong> nasceu da dedicação incansável em valorizar a arte manual e transformá-la em artigos de mesa posta e decoração de alto padrão.
+          </p>
+
+          <p class="about-p">
+            Cada trabalho reflete nosso compromisso com a excelência: pontos milimetricamente alinhados, fios nobres e a icônica plaquinha dourada gravada que sela o padrão nobre de luxo. Entregamos carinho, elegância e peças feitas para marcar momentos especiais ao redor da mesa.
+          </p>
+
+          <div class="about-highlights">
+            <div class="highlight-stat">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Artesanal Manual</span>
+            </div>
+            <div class="highlight-stat">
+              <span class="stat-number">Exclusivo</span>
+              <span class="stat-label">Design Autoral</span>
+            </div>
+            <div class="highlight-stat">
+              <span class="stat-number">Sob Medida</span>
+              <span class="stat-label">Jogos Personalizados</span>
+            </div>
+            <div class="highlight-stat">
+              <span class="stat-number">Brasil</span>
+              <span class="stat-label">Envio para Todo o País</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. FORMULÁRIO DE ENCOMENDA SEGURO -->
+    <section class="contact-section" id="encomenda">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-tag">Atendimento do Ateliê</span>
+          <h2 class="section-title">Solicite sua Encomenda Personalizada</h2>
+          <p class="section-subtitle">
+            Preencha os dados abaixo com as informações da peça que deseja e entraremos em contato para confirmar detalhes e prazos.
+          </p>
+        </div>
+
+        <div class="contact-card-box">
+          <div class="form-badge-security" role="status">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            <span>Ambiente Seguro: Proteção anti-spam (Honeypot), dados sanitizados e atendimento direto do atelier.</span>
+          </div>
+
+          <form id="contactForm" class="secure-form" novalidate>
+            <input type="text" name="website_url" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+            <div class="form-row-2">
+              <div class="form-group">
+                <label for="customerName" class="form-label">Seu Nome Completo <span class="required" aria-hidden="true">*</span></label>
+                <input type="text" id="customerName" name="name" class="form-input" placeholder="Ex: Mariana Silva" required maxlength="80" autocomplete="name">
+                <span class="error-msg" id="error-name" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="customerPhone" class="form-label">Telefone / Celular com DDD <span class="required" aria-hidden="true">*</span></label>
+                <input type="tel" id="customerPhone" name="phone" class="form-input" placeholder="(27) 99612-4303" required maxlength="15" autocomplete="tel">
+                <span class="error-msg" id="error-phone" aria-live="polite"></span>
+              </div>
+            </div>
+
+            <div class="form-row-2">
+              <div class="form-group">
+                <label for="customerEmail" class="form-label">Seu Melhor E-mail <span class="required" aria-hidden="true">*</span></label>
+                <input type="email" id="customerEmail" name="email" class="form-input" placeholder="seuemail@exemplo.com" required maxlength="100" autocomplete="email">
+                <span class="error-msg" id="error-email" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="orderCategory" class="form-label">Peça de Interesse</label>
+                <select id="orderCategory" name="category" class="form-select">
+                  <option value="Sousplat Verde Celadon Prime">Sousplat Verde Celadon Prime</option>
+                  <option value="Trio Sousplat Terracota e Areia">Trio Sousplat Terracota & Linho</option>
+                  <option value="Jogo Sousplat Azul Notte">Jogo Sousplat Azul Notte</option>
+                  <option value="Coleção Rosa Marsala">Coleção Sousplat & Trilho Marsala</option>
+                  <option value="Trilho de Mesa Espiral Azul Celeste">Trilho de Mesa Espiral Azul Celeste</option>
+                  <option value="Trilho Barroco Tons Terrosos">Trilho Barroco Tons Terrosos</option>
+                  <option value="Trilho Grafite Imperial">Trilho de Mesa Grafite Imperial</option>
+                  <option value="Trilho Vermelho Rubi">Trilho de Mesa Vermelho Rubi</option>
+                  <option value="Sousplat Pêssego & Salmão Prime">Sousplat Pêssego & Salmão Prime</option>
+                  <option value="Trilho Floral Rosa Antigo">Trilho de Mesa Floral Rosa Antigo</option>
+                  <option value="Projeto Personalizado sob Medida">Outro Projeto Personalizado sob Medida</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="customerMessage" class="form-label">Quantidade de lugares ou detalhes da encomenda <span class="required" aria-hidden="true">*</span></label>
+              <textarea id="customerMessage" name="message" class="form-textarea" placeholder="Ex: Gostaria de um jogo de 6 sousplats no modelo Verde Celadon para entrega no CEP 29000-000..." required maxlength="500"></textarea>
+              <span class="error-msg" id="error-message" aria-live="polite"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+              Enviar Solicitação de Encomenda
+            </button>
+
+            <p class="form-disclaimer">
+              🔒 Respeitamos sua privacidade. Seus dados nunca serão compartilhados com terceiros e destinam-se exclusivamente ao retorno do atelier.
+            </p>
+          </form>
+
+          <!-- Canais Diretos -->
+          <div class="direct-channels">
+            <a href="tel:+5527996124303" class="channel-btn">
+              <div class="channel-info">
+                <div class="channel-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </div>
+                <div>
+                  <span class="channel-title">Contato Oficial do Atelier</span>
+                  <span class="channel-sub">(27) 99612-4303 • Atendimento Personalizado</span>
+                </div>
+              </div>
+              <span style="color: var(--color-primary); font-weight: 700;">Ligar →</span>
+            </a>
+
+            <a href="https://instagram.com/rangel_luxocroche" target="_blank" rel="noopener noreferrer" class="channel-btn">
+              <div class="channel-info">
+                <div class="channel-icon ig" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                </div>
+                <div>
+                  <span class="channel-title">Instagram Oficial @rangel_luxocroche</span>
+                  <span class="channel-sub">Siga e confira novos modelos e fotos de bastidores</span>
+                </div>
+              </div>
+              <span style="color: var(--color-primary); font-weight: 700;">Seguir →</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================================
+       RODAPÉ (FOOTER)
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3 class="footer-brand-title">Rangel Luxo</h3>
+          <p class="footer-brand-desc">
+            Atelier artesanal especializado em mesa posta sofisticada, sousplats exclusivos com plaqueta personalizada e trilhos florais sob medida.
+          </p>
+          <p style="font-size: 0.82rem; color: #C9A265; font-weight: 600;">
+            ✓ Peças 100% Manuais • Atelier Rangel Luxo
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Navegação</h4>
+          <ul class="footer-links">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#diferenciais">Diferenciais</a></li>
+            <li><a href="#colecao">Coleção Completa</a></li>
+            <li><a href="#processo">Como Encomendar</a></li>
+            <li><a href="#sobre">Sobre o Atelier</a></li>
+            <li><a href="#encomenda">Fazer Encomenda</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Canais & Gestão</h4>
+          <ul class="footer-links">
+            <li><a href="tel:+5527996124303">Telefone: (27) 99612-4303</a></li>
+            <li><a href="https://instagram.com/rangel_luxocroche" target="_blank" rel="noopener noreferrer">Instagram: @rangel_luxocroche</a></li>
+            <li><a href="mailto:contato@rangeluxocroche.com.br">contato@rangeluxocroche.com.br</a></li>
+            <li><button type="button" id="pwaFooterInstallBtn" style="color: var(--color-gold); font-weight: 600; padding: 0; background: none; border: none; cursor: pointer; text-align: left; display: inline-flex; align-items: center; gap: 0.35rem;">📲 Instalar Aplicativo (PWA)</button></li>
+            <li><button type="button" onclick="document.getElementById('authTriggerBtn').click()" style="color: var(--color-gold); font-weight: 600; padding: 0;">Área do Cliente & Acesso Admin</button></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="currentYear">2026</span> Rangel Luxo. Todos os direitos reservados.</p>
+        <p>Desenvolvido com carrinho de compras interativo, painel administrativo e autenticação segura.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       DRAWER DO CARRINHO DE COMPRAS
+       ======================================================================== -->
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Carrinho de Compras" aria-hidden="true">
+    <div class="cart-header">
+      <h3>
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+        Seu Carrinho
+      </h3>
+      <button type="button" class="modal-close-btn" id="cartCloseBtn" aria-label="Fechar Carrinho" style="position: static;">✕</button>
+    </div>
+
+    <div class="cart-body" id="cartItemsContainer">
+      <!-- Itens renderizados dinamicamente pelo JavaScript -->
+    </div>
+
+    <div class="cart-footer">
+      <div class="cart-summary-row">
+        <span>Total:</span>
+        <strong id="cartSubtotal" style="color: var(--color-primary); font-size: 1.1rem;">Sob Orçamento</strong>
+      </div>
+      <button type="button" class="btn btn-primary" id="checkoutCartBtn" style="width: 100%;">
+        Finalizar Pedido / Encomenda
+      </button>
+    </div>
+  </aside>
+  <div class="nav-backdrop" id="cartBackdrop" aria-hidden="true"></div>
+
+  <!-- ========================================================================
+       MODAL DE LOGIN & REGISTRO
+       ======================================================================== -->
+  <div class="modal-overlay" id="authModal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="authModalHeading">
+    <div class="modal-dialog">
+      <button type="button" class="modal-close-btn" id="authCloseBtn" aria-label="Fechar Janela">✕</button>
+      
+      <div class="auth-tabs">
+        <button type="button" class="auth-tab-btn is-active" id="tabLoginBtn">Entrar</button>
+        <button type="button" class="auth-tab-btn" id="tabRegisterBtn">Criar Conta</button>
+      </div>
+
+      <!-- Aba 1: Login -->
+      <div class="auth-pane is-active" id="paneLogin">
+        <h3 id="authModalHeading" style="font-size: 1.25rem; margin-bottom: 0.5rem;">Acesse sua Conta</h3>
+        <p style="font-size: 0.82rem; margin-bottom: 1.25rem;">Acompanhe o status das suas encomendas e pedidos especiais.</p>
+
+        <form id="loginForm" class="secure-form">
+          <div class="form-group">
+            <label for="loginEmail" class="form-label">E-mail *</label>
+            <input type="email" id="loginEmail" class="form-input" placeholder="seuemail@exemplo.com" required autocomplete="email">
+          </div>
+
+          <div class="form-group">
+            <label for="loginPassword" class="form-label">Senha *</label>
+            <input type="password" id="loginPassword" class="form-input" placeholder="••••••••" required autocomplete="current-password">
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%;">
+            Entrar no Atelier
+          </button>
+
+          <div class="auth-demo-hint">
+            <strong>Dica de Acesso Rápido da Administradora:</strong><br>
+            • E-mail: <code>admin@rangeluxo.com.br</code><br>
+            • Senha: <code>admin</code> (ativa o Painel Administrativo)
+          </div>
+        </form>
+      </div>
+
+      <!-- Aba 2: Registro -->
+      <div class="auth-pane" id="paneRegister">
+        <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Cadastre-se</h3>
+        <p style="font-size: 0.82rem; margin-bottom: 1.25rem;">Crie sua conta para encomendar peças com facilidade.</p>
+
+        <form id="registerForm" class="secure-form">
+          <div class="form-group">
+            <label for="regName" class="form-label">Nome Completo *</label>
+            <input type="text" id="regName" class="form-input" placeholder="Ex: Patrícia Alves" required autocomplete="name">
+          </div>
+
+          <div class="form-group">
+            <label for="regEmail" class="form-label">Seu Melhor E-mail *</label>
+            <input type="email" id="regEmail" class="form-input" placeholder="seuemail@exemplo.com" required autocomplete="email">
+          </div>
+
+          <div class="form-group">
+            <label for="regPhone" class="form-label">Telefone / Celular com DDD *</label>
+            <input type="tel" id="regPhone" class="form-input" placeholder="(27) 99612-4303" required autocomplete="tel">
+          </div>
+
+          <div class="form-group">
+            <label for="regPassword" class="form-label">Criar uma Senha *</label>
+            <input type="password" id="regPassword" class="form-input" placeholder="Mínimo 4 caracteres" required autocomplete="new-password">
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%;">
+            Concluir Cadastro
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       MODAL DO PAINEL ADMINISTRATIVO (DASHBOARD)
+       ======================================================================== -->
+  <div class="modal-overlay" id="adminModal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="adminModalTitle">
+    <div class="modal-dialog admin-modal-dialog">
+      <button type="button" class="modal-close-btn" id="adminCloseBtn" aria-label="Fechar Painel">✕</button>
+
+      <div class="admin-header-bar">
+        <div>
+          <span class="admin-badge">Atelier Oficial</span>
+          <h2 id="adminModalTitle" style="font-size: 1.4rem; margin-top: 0.25rem;">Painel Administrativo • Rangel Luxo</h2>
+        </div>
+      </div>
+
+      <!-- Barra de Conexão Supabase / Status do Banco de Dados -->
+      <div class="admin-db-status-bar" id="adminDbStatusBar">
+        <div class="admin-db-status-info">
+          <span class="db-status-dot is-checking" id="dbStatusDot"></span>
+          <div>
+            <div style="font-weight: 700; font-size: 0.88rem; color: var(--color-text-main);" id="dbStatusTitle">Banco de Dados: Supabase Cloud</div>
+            <div class="db-status-desc" id="dbStatusDesc">Verificando status de sincronização...</div>
+          </div>
+        </div>
+        <div class="admin-db-actions">
+          <button type="button" class="btn btn-secondary btn-sm" id="btnSyncDb" title="Recarregar dados do Supabase">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 4px;"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg>
+            Sincronizar
+          </button>
+          <button type="button" class="btn btn-secondary btn-sm" id="btnToggleDbConfig" title="Configurar chaves do Supabase">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 4px;"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+            Configurar Conexão
+          </button>
+        </div>
+      </div>
+
+      <!-- Caixa Expansível de Configuração do Supabase -->
+      <div class="admin-db-config-box" id="adminDbConfigBox" style="display: none;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+          <h4 style="font-size: 0.95rem; margin: 0; color: var(--color-primary); font-weight: 700;">Configurações do Supabase</h4>
+          <span style="font-size: 0.72rem; background: var(--color-primary-soft); color: var(--color-primary); padding: 2px 8px; border-radius: 4px; font-weight: 600;">Nuvem Ativa</span>
+        </div>
+        <p style="font-size: 0.8rem; color: var(--color-text-muted); margin-bottom: 1rem; line-height: 1.4;">
+          Insira abaixo a <strong>URL do Projeto</strong> e a <strong>Chave Anon Pública</strong> do seu projeto no Supabase. Os pedidos serão sincronizados automaticamente em nuvem para que clientes de qualquer dispositivo enviem encomendas diretamente ao seu painel.
+        </p>
+        <form id="formSupabaseConfig">
+          <div class="form-group" style="margin-bottom: 0.75rem;">
+            <label for="cfgSupabaseUrl" class="form-label" style="font-size: 0.8rem;">Project URL (ex: https://xxxx.supabase.co) *</label>
+            <input type="url" id="cfgSupabaseUrl" class="form-input" placeholder="https://seu-projeto.supabase.co" style="font-size: 0.85rem; padding: 0.5rem 0.75rem;" required>
+          </div>
+          <div class="form-group" style="margin-bottom: 0.75rem;">
+            <label for="cfgSupabaseKey" class="form-label" style="font-size: 0.8rem;">Project Anon Public Key (anon/public) *</label>
+            <input type="password" id="cfgSupabaseKey" class="form-input" placeholder="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..." style="font-size: 0.85rem; padding: 0.5rem 0.75rem;" required>
+          </div>
+          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 1rem;">
+            <button type="submit" class="btn btn-primary btn-sm" id="btnSaveDbConfig">Salvar & Testar Conexão</button>
+            <button type="button" class="btn btn-secondary btn-sm" id="btnTestDbConnection">Apenas Testar</button>
+            <button type="button" class="btn btn-secondary btn-sm" id="btnResetDbConfig" style="color: var(--color-error);">Remover Chaves</button>
+          </div>
+        </form>
+        <div class="db-test-result" id="dbTestResult" style="margin-top: 0.75rem; font-size: 0.82rem; display: none;"></div>
+      </div>
+
+      <!-- KPIs / Métricas -->
+      <div class="admin-stats-grid">
+        <div class="admin-stat-card">
+          <div class="admin-stat-value" id="adminKpiOrders">0</div>
+          <div class="admin-stat-title">Encomendas Totais</div>
+        </div>
+        <div class="admin-stat-card">
+          <div class="admin-stat-value" id="adminKpiRevenue">R$ 0,00</div>
+          <div class="admin-stat-title">Volume Estimado</div>
+        </div>
+        <div class="admin-stat-card">
+          <div class="admin-stat-value" id="adminKpiProducts">10</div>
+          <div class="admin-stat-title">Peças no Catálogo</div>
+        </div>
+        <div class="admin-stat-card">
+          <div class="admin-stat-value" id="adminKpiUsers">1</div>
+          <div class="admin-stat-title">Clientes Registrados</div>
+        </div>
+      </div>
+
+      <!-- Tabela de Pedidos Recebidos -->
+      <h3 style="font-size: 1.1rem; margin-bottom: 0.75rem;">Últimas Encomendas Registradas</h3>
+      <div class="admin-table-container">
+        <table class="admin-table">
+          <thead>
+            <tr>
+              <th>ID Pedido</th>
+              <th>Cliente / Contato</th>
+              <th>Itens</th>
+              <th>Total</th>
+              <th>Status</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody id="adminOrdersTableBody">
+            <!-- Linhas renderizadas pelo JavaScript -->
+          </tbody>
+        </table>
+      </div>
+
+      <p style="font-size: 0.78rem; color: var(--color-text-muted);">
+        💡 Dica: Clique no botão <strong>"Mudar Status"</strong> para avançar o pedido entre <em>Pendente</em>, <em>Em Produção</em> e <em>Concluído</em>.
+      </p>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       MODAL DE ENCOMENDA RÁPIDA
+       ======================================================================== -->
+  <div class="modal-overlay" id="orderModal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modalProductTitle">
+    <div class="modal-dialog">
+      <button type="button" class="modal-close-btn" id="modalCloseBtn" aria-label="Fechar janela de encomenda">✕</button>
+      
+      <div style="display: flex; gap: 1rem; align-items: center; margin-bottom: 1.25rem;">
+        <img id="modalProductImage" src="assets/images/sousplat-verde-celadon.jpg" alt="" style="width: 72px; height: 72px; border-radius: 8px; object-fit: cover; border: 1.5px solid var(--color-gold);" width="72" height="72">
+        <div>
+          <span style="font-size: 0.72rem; text-transform: uppercase; color: var(--color-primary); font-weight: 700; letter-spacing: 0.1em;">Peça Selecionada</span>
+          <h3 id="modalProductTitle" style="font-size: 1.15rem; color: var(--color-text-main); margin-bottom: 2px;">Sousplat Verde Celadon</h3>
+          <span id="modalProductPrice" style="font-size: 0.95rem; font-weight: 700; color: var(--color-gold-dark);">Sob Encomenda</span>
+        </div>
+      </div>
+
+      <form id="modalOrderForm" class="secure-form">
+        <div class="form-group">
+          <label for="modalCustomerName" class="form-label">Seu Nome Completo *</label>
+          <input type="text" id="modalCustomerName" class="form-input" placeholder="Ex: Patrícia Alves" required maxlength="80">
+        </div>
+
+        <div class="form-group">
+          <label for="modalCustomerPhone" class="form-label">Seu Telefone / Celular com DDD *</label>
+          <input type="tel" id="modalCustomerPhone" class="form-input" placeholder="(27) 99612-4303" required maxlength="15">
+        </div>
+
+        <div class="form-group">
+          <label for="modalCustomerEmail" class="form-label">Seu E-mail para Confirmação *</label>
+          <input type="email" id="modalCustomerEmail" class="form-input" placeholder="seuemail@exemplo.com" required maxlength="100">
+        </div>
+
+        <div class="form-group">
+          <label for="modalSelectedColor" class="form-label">Quantidade de Lugares Desejada</label>
+          <select id="modalSelectedColor" class="form-select">
+            <option value="Jogo de 4 Lugares">Jogo de 4 Lugares</option>
+            <option value="Jogo de 6 Lugares">Jogo de 6 Lugares (Mais Escolhido)</option>
+            <option value="Jogo de 8 Lugares">Jogo de 8 Lugares</option>
+            <option value="Jogo de 12 Lugares">Jogo de 12 Lugares</option>
+            <option value="Peça Unitária / Centro de Mesa">Peça Unitária / Centro de Mesa</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%;">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+          Confirmar Solicitação de Encomenda
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       BARRA DE NAVEGAÇÃO APP-LIKE (MOBILE BOTTOM NAVIGATION)
+       ======================================================================== -->
+  <nav class="pwa-bottom-nav" aria-label="Navegação Rápida do Aplicativo">
+    <a href="#inicio" class="pwa-bottom-item active" aria-label="Início">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      <span>Início</span>
+    </a>
+    <a href="#colecao" class="pwa-bottom-item" aria-label="Coleções">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+      <span>Coleção</span>
+    </a>
+    <a href="#encomenda" class="pwa-bottom-item" aria-label="Encomendas">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+      <span>Encomenda</span>
+    </a>
+    <button type="button" class="pwa-bottom-item mobile-cart-trigger" aria-label="Carrinho de Compras">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+      <span>Carrinho</span>
+      <span class="pwa-bottom-badge" id="pwaCartBadge" style="display: none;">0</span>
+    </button>
+    <button type="button" class="pwa-bottom-item" id="pwaMenuTriggerBtn" aria-label="Menu Principal">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      <span>Menu</span>
+    </button>
+  </nav>
+
+  <!-- Scripts da Aplicação: Supabase Database + Lógica Principal + PWA Controller -->
+  <script src="js/supabase.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/pwa.js"></script>
+</body>
+</html>

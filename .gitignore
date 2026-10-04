@@ -1,0 +1,15 @@
+# Variáveis de ambiente e credenciais sensíveis (NUNCA comitar)
+.env
+.env.local
+.env.*.local
+*.env
+
+# Dependências
+node_modules/
+package-lock.json
+
+# Sistema operacional e caches
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
